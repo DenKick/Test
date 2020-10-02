@@ -177,6 +177,22 @@ ul li {
   }
 }
 
+@media screen and (min-width: 600px) {
+  .docs__item {
+    font-size: 1em;
+    color: #74757b;
+  }
+
+  .header__logo {
+    height: 50px;
+  }
+
+  .step-link {
+    display: block;
+    margin: 0 0 0 30px;
+  }
+}
+
 @media (orientation: landscape){
   .header {
     height: 20vh;
