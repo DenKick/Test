@@ -8,6 +8,10 @@ body {
   font-family: Ubuntu;
 }
 
+.desktop-header {
+  display: none;
+}
+
 .closed-header, .opened-header, .menu__btn, button {
   transition: .1s linear;
 }
@@ -144,6 +148,7 @@ body {
 
 /* * Buttons */
 button {
+  background-color: #eff4f4;
   border: 2px solid #393e6b;
   border-radius: 3em;
   color: #393e6b;
@@ -234,6 +239,10 @@ ul li {
     height: 40px;
   }
 
+  .social__icon {
+    width: 20%;
+  }
+
   .step-link {
     display: block;
     margin: 0 0 0 30px;
@@ -245,19 +254,32 @@ ul li {
   }
 }
 
-@media screen and (min-width: 500px) {
+@media (min-width: 500px) {
   .header__logo {
     height: 50px;
+  }
+
+  .after-setup__icon {
+    width: 20%;
+  }
+
+  .social__icon {
+    width: 15%;
   }
 }
 
 @media (orientation: landscape){
+  button {
+    align-self: center;
+    width: 50%;
+  }
+
   .closed-header {
-    height: 15vh;
+    height: 10vh;
   }
 
   .container {
-    margin: 15vh 0 0 0;
+    margin: 10vh 0 0 0;
   }
 
   .content-block {
@@ -269,20 +291,76 @@ ul li {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
   button {
     border-radius: 4em;
     line-height: 4em;
-    width: 40%;
+    width: 50%;
   }
 
-  .container-block {
-    padding: 4%;
+  .mobile-header {
+    display: none;
+  }
+
+  .desktop-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .navigation > .header__logo {
+    display: inline-block;
+    height: 20px;
+  }
+
+  .navigation, .login {
+    text-transform: uppercase;
+    font-size: .8em;
+    align-self: center;
+    margin: 0 30px;
+  }
+
+  .navigation *, .login * {
+    text-decoration: none;
+    color: #3a3f6b;
+    margin: auto 5px;
+  }
+
+  .content-block {
+    padding: 4% 25% 4% 15%;
+  }
+
+  .content-block * {
+    margin: 1.5vh 0;
   }
 
   .button-position {
     display: flex;
     flex-direction: row;
     margin-right: 10%;
+  }
+
+  .primary-btn {
+    margin-right: 1em;
+  }
+
+  .after-setup__icon {
+    font-size: 3em;
+    width: 15%;
+  }
+
+  .social__icon {
+    width: 30%;
+  }
+
+  .social-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
