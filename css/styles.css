@@ -101,7 +101,7 @@ body {
   font-size: 0.5em;
   opacity: 1;
   position: absolute;
-  transform: translate(-45%, 15%);
+  transform: translate(-45%, 25%);
 }
 
 .docs__item {
