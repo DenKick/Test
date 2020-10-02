@@ -112,14 +112,14 @@ body {
 .after-setup__icon {
   display: block;
   font-size: 3em;
-  width: 33%;
+  width: 30%;
 }
 
 .link-social, .after-setup__text {
   display: block;
-  font-size: .8em;
+  font-size: .9em;
   align-self: center;
-  width: 77%;
+  width: 70%;
 }
 
 .after-setup__text {
@@ -220,6 +220,11 @@ ul li {
   top: 50%;
 }
 
+.button-position {
+  display: flex;
+  flex-direction: column;
+}
+
 .content-block * {
   margin: 1.5vh 0;
 }
@@ -248,7 +253,11 @@ ul li {
 
 @media (orientation: landscape){
   .closed-header {
-    height: 20vh;
+    height: 15vh;
+  }
+
+  .container {
+    margin: 15vh 0 0 0;
   }
 
   .content-block {
@@ -257,5 +266,23 @@ ul li {
 
   .content-block * {
     margin: 1.5vw 0;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  button {
+    border-radius: 4em;
+    line-height: 4em;
+    width: 40%;
+  }
+
+  .container-block {
+    padding: 4%;
+  }
+
+  .button-position {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10%;
   }
 }
