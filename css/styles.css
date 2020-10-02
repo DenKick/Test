@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu;
+}
+
+/* *Header */
+.header {
+  background-color: #fff;
+  box-shadow: 0 0 10px 5px #c9d6f2;
+  height: 12vh;
+  justify-content: center;
+  width: 100vw;
+  z-index: 1;
+}
+
+.header__menu {
+  height: 20px;
+  transform: translateY(-50%);
+  transition: .1s linear;
+  width: 40px;
+}
+
+.opened {
+  height: 25px;
+}
+
+.menu__btn {
+  background-color: #3fd6bc;
+  height: 3px;
+  width: 100%;
+}
+
+.header__logo {
+  display: block;
+  height: 25px;
+  margin: auto 0;
+}
+
+/* * Main content */
+.container {
+  margin: 12vh 0 0 0;
+}
+
+.container > div:nth-child(odd) {
+  background-color: #eff4f4;
+}
+
+.container > div:nth-child(even) {
+  background-color: #fff;
+}
+
+.content-block {
+  padding: 7%;
+}
+
+.content-block__heading {
+  color: #393e6b;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 82%;
+}
+
+.content-block__text {
+  color: #74757b;
+  font-size: 0.8em;
+  width: 90%;
+}
+
+/* .content-block__setup {
+} */
+
+.setup__item {
+  width: 50%;
+}
+
+.item__step {
+  color: #e1e2e9;
+  font-size: 4em;
+}
+
+.icon-01, .icon-02 {
+  font-size: 0.5em;
+  opacity: 1;
+  position: absolute;
+  transform: translate(-50%, 50%);
+}
+
+.docs__item {
+  font-size: .8em;
+  color: #74757b;
+}
+
+
+/* * Buttons */
+button {
+  border: 2px solid #393e6b;
+  border-radius: 3em;
+  color: #393e6b;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 3em;
+  text-transform: uppercase;
+  transition: .1s linear;
+}
+
+button:hover {
+  border: 2px solid #464d85;
+  color: #464d85;
+}
+
+.primary-btn {
+  border: 2px solid #3fd6bc;
+  color: #fff;
+  background-color: #3fd6bc;
+}
+
+.primary-btn:hover {
+  border: 2px solid #0da088;
+  color: #fff;
+  background-color: #0da088;
+}
+
+/* * Link */
+a {
+  color: #0da088;
+}
+
+/* * List */
+ul li {
+  color: #393e6b;
+}
+
+/* .secondary-btn {
+
+} */
+
+/* * Modificators */
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-position {
+  position: fixed;
+  top: 0;
+}
+
+.menu-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 10vw;
+  position: absolute;
+  top: 50%;
+}
+
+.content-block * {
+  margin: 1.5vh 0;
+}
+
+@media screen and (min-width: 400px) {
+  .header__logo {
+    height: 40px;
+  }
+
+  .step-link {
+    display: block;
+    margin: 0 0 0 30px;
+  }
+}
+
+@media (orientation: landscape){
+  .header {
+    height: 20vh;
+  }
+
+  .content-block {
+    padding: 7% 20%;
+  }
+
+  .content-block * {
+    margin: 1.5vw 0;
+  }
+}
