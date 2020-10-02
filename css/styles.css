@@ -1,24 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Ubuntu;
 }
 
+.closed-header, .opened-header, .menu__btn, button {
+  transition: .1s linear;
+}
+
 /* *Header */
-.header {
+.closed-header, .opened-header {
   background-color: #fff;
   box-shadow: 0 0 10px 5px #c9d6f2;
-  height: 9vh;
   justify-content: center;
   width: 100vw;
   z-index: 1;
 }
 
+.closed-header {
+  height: 9vh;
+}
+
+.opened-header{
+  height: 100vh;
+}
+
+/* Menu */
 .header__menu {
+  cursor: pointer;
   height: 20px;
   transform: translateY(-50%);
-  transition: .1s linear;
   width: 40px;
+}
+
+.header__menu:hover > .menu__btn {
+  background-color: #0da088;
 }
 
 .opened {
@@ -68,9 +88,6 @@ body {
   width: 90%;
 }
 
-/* .content-block__setup {
-} */
-
 .setup__item {
   width: 50%;
 }
@@ -84,7 +101,7 @@ body {
   font-size: 0.5em;
   opacity: 1;
   position: absolute;
-  transform: translate(-50%, 50%);
+  transform: translate(-45%, 15%);
 }
 
 .docs__item {
@@ -134,7 +151,6 @@ button {
   font-weight: 700;
   line-height: 3em;
   text-transform: uppercase;
-  transition: .1s linear;
 }
 
 button:hover {
@@ -180,7 +196,6 @@ ul li {
 }
 
 /* * Modificators */
-
 .flex-column {
   display: flex;
   flex-direction: column;

@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header flex-row header-position">
+  <header class="closed-header flex-row header-position" id="header">
     <div class="header__menu menu-position" onclick="openMenu()" id="header__menu">
       <div class="menu__btn"></div>
       <div class="menu__btn"></div>
@@ -36,11 +36,11 @@
         </div>
         <div class="setup__item flex-column">
           <span class="item__step">2 <span class="icon-02"></span></span>
-          <a class="step-link" href="#">Установка HTML-кода</a>
+          <a class="step-link" href="#htmlsetup">Установка HTML-кода</a>
         </div>
       </div>
     </div>
-    <div class="content-block flex-column">
+    <div class="content-block flex-column" id="htmlsetup">
       <span class="content-block__heading">УСТАНОВКА HTML-КОДА</span>
       <ul class="content-block__docs">
         <li>
@@ -75,7 +75,7 @@
         </li>
       </ul>
     </div>
-    <div class="content-block flex-column">
+    <div class="content-block flex-column" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <span class="content-block__heading">УСТАНОВКА ПРИЛОЖЕНИЯ ДЛЯ ОПЕРАТОРОВ WEBIM DASHBOARD</span>
       <span class="content-block__text">Чтобы быть на связи с клиентами всегда, установите приложение Webim Dashboard </span>
       <ul class="content-block__docs">
