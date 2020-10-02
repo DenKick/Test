@@ -303,6 +303,7 @@ ul li {
   }
 
   .desktop-header {
+    background: url("../img/shapka.png") no-repeat;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -330,6 +331,10 @@ ul li {
     text-decoration: none;
     color: #3a3f6b;
     margin: auto 5px;
+  }
+
+  .navigation > a:hover, .login > a:hover {
+    text-shadow: 0 0 1px #3a3f6b;
   }
 
   .content-block {
