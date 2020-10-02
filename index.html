@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 </head>
 <body>
   <header class="closed-header flex-row header-position" id="header">
@@ -32,6 +33,9 @@
       <img class="header__logo" src="img/logo.png" alt="Webim logo">
     </div>
   </header>
+  <div class="help">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+  </div>
   <div class="container">
     <div class="content-block flex-column">
       <span class="content-block__heading">УСТАНОВКА WEBIM</span>
@@ -194,8 +198,35 @@
     </div>
   </div>
   <footer class="footer flex-column">
-    <span>(c) Webim 2008-2007</span>
-    <span>Все права защищены</span>
+    <div class="mobile-footer flex-column">
+      <span>(c) Webim 2008-2007</span>
+      <span>Все права защищены</span>
+    </div>
+    <div class="desktop-footer">
+      <div class="left-part flex-row">
+        <div class="copyright flex-column">
+          <img class="header__logo" src="img/logo.png">
+          <span>(c) Webim 2008-2007</span>
+          <span>Все права защищены</span>
+        </div>
+        <div class="flex-column">
+          <div class="flex-column">
+            <span class="phone">+7 (800) 500-49-32</span>
+            <span class="phone">+7 (499) 322-37-54</span>
+            <span>Москва, Серебряничная набережная, 29</span>
+          </div>
+          <div class="flex-column">
+            <span class="phone">+7 (812) 385-53-37</span>
+            <span>Санкт-Петербург, Чкаловский проспект, 15</span>
+          </div>
+        </div>
+      </div>
+      <div class="right-part flex-column">
+        <span>contact@webdim.ru</span>
+        <span>sales@webdim.ru</span>
+        <span>Понедельник - пятница с 10:00 - 18:00</span>
+      </div>
+    </div>
   </footer>
   <script src="js/script.js"></script>
 </body>

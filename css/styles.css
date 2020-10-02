@@ -8,6 +8,10 @@ body {
   font-family: Ubuntu;
 }
 
+.desktop-footer {
+  display: none
+}
+
 .desktop-header {
   display: none;
 }
@@ -93,7 +97,7 @@ body {
 }
 
 .setup__item {
-  width: 50%;
+  width: 33%;
 }
 
 .item__step {
@@ -298,6 +302,29 @@ ul li {
     width: 50%;
   }
 
+  .help {
+    text-align: center;
+    background-color: #3fd6bc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .fa-comments {
+    color: #fff;
+  }
+
+  .mobile-footer {
+    display: none;
+  }
+
   .mobile-header {
     display: none;
   }
@@ -366,7 +393,7 @@ ul li {
 
   .after-setup__icon {
     font-size: 3em;
-    width: 15%;
+    width: 12%;
   }
 
   .social__icon {
@@ -376,5 +403,35 @@ ul li {
   .social-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .desktop-footer {
+    color: #b7bac9;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    justify-content: space-between;
+  }
+
+  .copyright * {
+    margin: 20px 40px 0 40px;
+  }
+
+  .left-part > div > img {
+    filter: brightness(5.0);
+  }
+
+  .phone {
+    color: #fff;
+    margin: 20px 0 0 0;
+    font-size: 1.2em;
+  }
+
+  .right-part {
+    padding: 10px;
+  }
+
+  .right-part * {
+    margin: 10px;
   }
 }
