@@ -39,7 +39,7 @@ body {
 
 /* * Main content */
 .container {
-  margin: 12vh 0 0 0;
+  margin: 9vh 0 0 0;
 }
 
 .container > div:nth-child(odd) {
