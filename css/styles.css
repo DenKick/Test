@@ -175,21 +175,16 @@ ul li {
     display: block;
     margin: 0 0 0 30px;
   }
-}
 
-@media screen and (min-width: 500px) {
   .docs__item {
     font-size: 1em;
     color: #74757b;
   }
+}
 
+@media screen and (min-width: 500px) {
   .header__logo {
     height: 50px;
-  }
-
-  .step-link {
-    display: block;
-    margin: 0 0 0 30px;
   }
 }
 
