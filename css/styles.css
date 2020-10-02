@@ -247,7 +247,7 @@ ul li {
 }
 
 @media (orientation: landscape){
-  .header {
+  .closed-header {
     height: 20vh;
   }
 
