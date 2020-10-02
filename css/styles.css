@@ -56,7 +56,7 @@ body {
 
 .content-block__heading {
   color: #393e6b;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
   width: 82%;
@@ -64,7 +64,7 @@ body {
 
 .content-block__text {
   color: #74757b;
-  font-size: 0.8em;
+  font-size: 1em;
   width: 90%;
 }
 
