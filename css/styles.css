@@ -8,6 +8,10 @@ body {
   font-family: Ubuntu;
 }
 
+.help {
+  display: none;
+}
+
 .desktop-footer {
   display: none
 }
@@ -16,7 +20,7 @@ body {
   display: none;
 }
 
-.closed-header, .opened-header, .menu__btn, button {
+.closed-header, .opened-header, .menu__btn, .help, .content-block__after-setup, button, a {
   transition: .1s linear;
 }
 
@@ -194,6 +198,10 @@ a {
   color: #0da088;
 }
 
+a:hover {
+  color: #3fd6bc;
+}
+
 /* * List */
 ul {
   margin: 0;
@@ -278,6 +286,29 @@ ul li {
     width: 50%;
   }
 
+  .help {
+    text-align: center;
+    background-color: #3fd6bc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .help:hover {
+    background-color: #0da088;
+  }
+
+  .fa-comments {
+    color: #fff;
+  }
+
   .closed-header {
     height: 10vh;
   }
@@ -300,25 +331,6 @@ ul li {
     border-radius: 4em;
     line-height: 4em;
     width: 50%;
-  }
-
-  .help {
-    text-align: center;
-    background-color: #3fd6bc;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-
-  .fa-comments {
-    color: #fff;
   }
 
   .mobile-footer {
@@ -370,6 +382,7 @@ ul li {
   }
 
   .navigation > a:hover, .login > a:hover {
+    color: #3a3f6b;
     text-shadow: 0 0 1px #3a3f6b;
   }
 
@@ -433,5 +446,24 @@ ul li {
 
   .right-part * {
     margin: 10px;
+  }
+
+  .content-block__after-setup {
+    position: relative;
+  }
+  
+  .content-block__after-setup::after {
+    content: '';
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    width: 0;
+    height: 2px;
+    background-color: #3fd6bc;
+    transition: .2s linear;
+  }
+  
+  .content-block__after-setup:hover::after {
+    width: 13%;
   }
 }
